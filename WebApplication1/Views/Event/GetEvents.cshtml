@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "GetEvents";
+}
+
+@model IEnumerable<WebApplication1.Models.EventModel>
+
+<style>
+    .table, th, tr {
+        width: 15in;
+        border: 2px solid pink;
+    }
+</style>
+
+<div class="container">
+    <h3 class="display-4">All Events</h3><br />
+    <div class="row">
+        <table class="table table-bordered table-hover">
+            <thead class="thead">
+                <tr>
+                    <th>Title</th>
+                    <th>Email</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Start Time</th>
+                    <th>Type</th>
+                    <th>Duration</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                    <th>Invitations</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            @foreach (var eve in Model)
+            {
+                if (User.Identity.Name == "myadmin@bookevents.com")
+                {
+                    <tbody class="tbody">
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => eve.Title)</td>
+                            <td>@Html.DisplayFor(modelItem => eve.Email)</td>
+                            <td>@Html.DisplayFor(modelItem => eve.Date)</td>
+                            <td>@Html.DisplayFor(modelItem => eve.Location)</td>
+                            <td>@Html.DisplayFor(modelItem => eve.Starttime)</td>
+                            <td>@Html.DisplayFor(modelItem => eve.Type)</td>
+                            <td>@Html.DisplayFor(modelItem => eve.Duration)</td>
+                            <td>@Html.DisplayFor(modelItem => eve.Description)</td>
+                            <td>@Html.DisplayFor(modelItem => eve.Details)</td>
+                            <td>@Html.DisplayFor(modelItem => eve.Invitations)</td>
+                            <td>@Html.ActionLink("Edit", "Edit", new { title = eve.Title })</td>
+                        </tr>
+                    </tbody>
+
+                }
+                else
+                {
+                    if (eve.Type == "Public")
+                    {
+                        <tbody class="tbody">
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => eve.Title)</td>
+                                <td>@Html.DisplayFor(modelItem => eve.Email)</td>
+                                <td>@Html.DisplayFor(modelItem => eve.Date)</td>
+                                <td>@Html.DisplayFor(modelItem => eve.Location)</td>
+                                <td>@Html.DisplayFor(modelItem => eve.Starttime)</td>
+                                <td>@Html.DisplayFor(modelItem => eve.Type)</td>
+                                <td>@Html.DisplayFor(modelItem => eve.Duration)</td>
+                                <td>@Html.DisplayFor(modelItem => eve.Description)</td>
+                                <td>@Html.DisplayFor(modelItem => eve.Details)</td>
+                                <td>@Html.DisplayFor(modelItem => eve.Invitations)</td>
+                                <td>--</td>
+                            </tr>
+                        </tbody>
+
+                    }
+                }
+            }
+        </table>
+    </div>
+</div>

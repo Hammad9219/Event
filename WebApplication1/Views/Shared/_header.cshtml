@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebApplication1.Models.EventModel>
+<header class="border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">Book Events</a>
+        <div class="nav-item" id="navbarNav">
+            <ul class="navbar-nav flex-grow-1">
+                <a class="nav-link" href="/">Home </a>
+                <a class="nav-link" href="/Home/AboutUs">About Us</a>
+                <a class="nav-link" href="/Home/ContactUs">Contact Us</a>
+            </ul>
+
+            <ul class="navbar-nav">
+                @{await Html.RenderPartialAsync("_LoginInfo", Model); }
+            </ul>
+        </div>
+    </nav>
+</header>
