@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <History>True|2023-05-10T12:03:17.8656123Z;False|2023-05-10T17:31:41.4887075+05:30;False|2023-05-10T17:31:03.6016767+05:30;</History>
+    <_PublishTargetUrl>D:\Event\demo</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>
