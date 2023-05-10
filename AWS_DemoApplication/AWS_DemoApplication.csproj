@@ -1,7 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
+<<<<<<< HEAD
     <TargetFramework>netcoreapp3.1</TargetFramework>
+=======
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+>>>>>>> 91dc1122a2bad2c04c62102ead710a4f6ee09638
   </PropertyGroup>
 
 </Project>
