@@ -31,7 +31,11 @@ namespace WebApplication1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+<<<<<<< HEAD
             services.AddDbContext<EventContext>(options => options.UseSqlServer("DefaultConnection"));
+=======
+            services.AddDbContext<EventContext>(options => options.UseSqlServer("Server=td5l74lo6615qq42.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;User Id = ssaeolqvwucmnoys; Password = taj3zulsbdp113q5; Port = 3306; Database = fso5ojex0lmg55wm;Integrated Security=True;"));
+>>>>>>> b4cd9b5aa1fcce7735e52f6c85e082d5ea51df56
 
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<EventContext>();
             services.AddControllersWithViews();
