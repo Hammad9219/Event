@@ -10421,11 +10421,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Nagarro-Data\\mohammad-hammad-MVC\\mohammad-hammad-MVC\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "D:\\Event\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "D:\\Nagarro-Data\\mohammad-hammad-MVC\\mohammad-hammad-MVC\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "D:\\Event\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\hk916\\.nuget\\packages\\",
-      "outputPath": "D:\\Nagarro-Data\\mohammad-hammad-MVC\\mohammad-hammad-MVC\\WebApplication1\\obj\\",
+      "outputPath": "D:\\Event\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hk916\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -9,73 +9,73 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplication1
 build_property.RootNamespace = WebApplication1
-build_property.ProjectDir = D:\Nagarro-Data\mohammad-hammad-MVC\mohammad-hammad-MVC\WebApplication1\
+build_property.ProjectDir = D:\Event\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Nagarro-Data\mohammad-hammad-MVC\mohammad-hammad-MVC\WebApplication1
+build_property.MSBuildProjectDirectory = D:\Event
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Account/LogIn.cshtml]
+[D:/Event/Views/Account/LogIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dJbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Account/Signup.cshtml]
+[D:/Event/Views/Account/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Event/CreateEvent.cshtml]
+[D:/Event/Views/Event/CreateEvent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcQ3JlYXRlRXZlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Event/Edit.cshtml]
+[D:/Event/Views/Event/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Event/GetEventByTitle.cshtml]
+[D:/Event/Views/Event/GetEventByTitle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcR2V0RXZlbnRCeVRpdGxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Event/GetEvents.cshtml]
+[D:/Event/Views/Event/GetEvents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcR2V0RXZlbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Event/Invitation.cshtml]
+[D:/Event/Views/Event/Invitation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcSW52aXRhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Event/MyEvents.cshtml]
+[D:/Event/Views/Event/MyEvents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcTXlFdmVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Home/AboutUs.cshtml]
+[D:/Event/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Home/ContactUs.cshtml]
+[D:/Event/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Home/Index.cshtml]
+[D:/Event/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Shared/_footer.cshtml]
+[D:/Event/Views/Shared/_footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9mb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Shared/_header.cshtml]
+[D:/Event/Views/Shared/_header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9oZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Shared/_Layout.cshtml]
+[D:/Event/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/Shared/_LoginInfo.cshtml]
+[D:/Event/Views/Shared/_LoginInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Nagarro-Data/mohammad-hammad-MVC/mohammad-hammad-MVC/WebApplication1/Views/_ViewStart.cshtml]
+[D:/Event/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
