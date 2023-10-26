@@ -1,0 +1,88 @@
+﻿@model WebApplication1.Models.SigninModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LogIn</title>
+    <environment include="Development">
+        <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        @*<link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />*@
+
+        <link rel="stylesheet"
+              href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/twitter-bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              integrity=""
+              crossorigin="anonymous">
+    </environment>
+
+
+    @*FOR VALIDATION*@
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/jquery-validate/jquery.validate.js"></script>
+        <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    </environment>
+
+    <environment>
+        <environment exclude="Development">
+            <script src="~/lib/jquery/dist/jquery.min.js"></script>
+            <script src="~/jquery-validate/jquery.validate.min.js"></script>
+            <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+        </environment>
+    </environment>
+</head>
+<body>
+    <div class="container">
+        
+        <h3>Sign In</h3>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                @using (Html.BeginForm("LogIn", "Account", FormMethod.Post))
+                {
+                    @Html.ValidationMessage("CustomError");
+                    <form asp-action="LogIn">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.CheckBoxFor(m => m.RememberMe, new { id = "Remember Me" })
+                            @Html.DisplayNameFor(m => m.RememberMe)
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Login" class="btn btn-primary" />
+                        </div>
+                    </form>
+                }
+
+            </div>
+            <div class="col-md-8">
+                <img src="~/lib/Images/Login.jpeg" class="img-fluid" />
+            </div>
+        </div>
+
+        <div>
+            @Html.ActionLink("Signup", "Signup", "Account")
+        </div>
+    </div>
+</body>
+</html>
