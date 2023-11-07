@@ -1,0 +1,91 @@
+﻿@model IEnumerable<WebApplication1.Models.EventModel>
+@using WebApplication1.Models;
+<div class="container">
+    <div class="row">
+        <table class="table table-content table-striped">
+            <thead>
+                <tr>
+                    <th>Past Events</th>
+                    <th>Upcoming Events</th>
+                </tr>
+            </thead>
+            @foreach (EventModel eve in @Model)
+            {
+                @if (User.Identity.Name == "myadmin@bookevents.com")
+                {
+                    <tbody>
+                        <tr>
+                            <td>
+
+
+                                @if (eve.Date <= DateTime.Now)
+                                {
+                                    @Html.ActionLink(eve.Title, "GetEventByTitle", "Event", new { eve.Title })
+                                }
+                                else
+                                {
+                                    <p>-</p>
+                                }
+                            </td>
+                            <td>
+                                @if (eve.Date > DateTime.Now)
+                                {
+
+                                    @Html.ActionLink(eve.Title, "GetEventByTitle", "Event", new { eve.Title })
+                                }
+                                else
+                                {
+                                    <p>-</p>
+                                }
+                            </td>
+
+                        </tr>
+                    </tbody>
+                }
+                else
+                {
+                    @if (eve.Type == "Public")
+                    {
+                        <tbody>
+                            <tr>
+                                <td>
+
+
+                                    @if (eve.Date <= DateTime.Now)
+                                    {
+                                        @Html.ActionLink(eve.Title, "GetEventByTitle", "Event", new { eve.Title })
+                                    }
+                                    else
+                                    {
+                                        <p>-</p>
+                                    }
+                                </td>
+                                <td>
+                                    @if (eve.Date > DateTime.Now)
+                                    {
+
+                                        @Html.ActionLink(eve.Title, "GetEventByTitle", "Event", new { eve.Title })
+                                    }
+                                    else
+                                    {
+                                        <p>-</p>
+                                    }
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    }
+
+                }
+            }
+        </table>
+    </div>
+</div>
+
+<style>
+    table {
+        margin: 20px;
+        text-align: center;
+        background-color: pink;
+    }
+</style>

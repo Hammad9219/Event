@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "Invitation";
+}
+
+@model IEnumerable<WebApplication1.Models.EventModel>
+
+<table class="table table-bordered table-responsive table-hover">
+    <thead>
+        <tr class="warning">
+            <th>Event Title</th>
+            <th>Event Date</th>
+            <th>Event Start Time</th>
+            <th>Event Duration</th>
+            <th>Description</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+
+    @foreach (var i in Model)
+    {
+        if (i.Description == null)
+        {
+            i.Description = "NONE";
+        }
+        if (i.Details == null)
+        {
+            i.Details = "NONE";
+        }
+        if (i.Invitations == null)
+        {
+            continue;
+        }
+        else
+        {
+            string[] allInvites = i.Invitations.Split(',');
+            foreach (string invite in allInvites)
+            {
+                if (invite == User.Identity.Name)
+                {
+                    <tr class="info">
+
+                        <td>@Html.ActionLink(i.Title, "GetEventByTitle", new { title = i.Title }) </td>
+                        <td>@i.Date</td>
+                        <td>@i.Starttime</td>
+                        <td>@i.Duration</td>
+                        <td>@i.Description</td>
+                        <td>@i.Details</td>
+                    </tr>
+                }
+
+            }
+
+        }
+
+    }
+
+</table>
+<style>
+    .table, th, tr {
+        margin-top:20px;
+        width: 15in;
+        border: 2px solid pink;
+    }
+</style>
